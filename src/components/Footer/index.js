@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const FooterWrapper = styled.footer`
-  background: url(${FooterBg}) center center;
+  background: url(${FooterBg}) center center repeat-y;
   height: 144px;
   padding: 40px;
   & .container {
@@ -22,10 +22,19 @@ const FooterWrapper = styled.footer`
     justify-content: space-between;
     max-width: 1180px;
   }
+  @media screen and (max-width: 568px) {
+    padding: 16px;
+    & .container {
+      flex-direction: column;
+    }
+  }
 `;
 
 const FooterLinksList = styled.ul`
   list-style: none;
+  @media screen and (max-width: 568px) {
+    margin-top: 8px;
+  }
 `;
 
 const FooterLinksListItem = styled.li`

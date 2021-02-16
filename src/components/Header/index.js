@@ -14,6 +14,9 @@ const HeaderWrapper = styled.header`
   margin: 0 auto;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 568px) {
+    width: 100%;
+  }
 `;
 
 const LogoWrapper = styled.div`

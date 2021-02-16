@@ -13,6 +13,10 @@ const FormWrapper = styled.form`
   width: 529px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+  @media screen and (max-width: 767px) {
+    max-width: 95%;
+    margin: 16px auto;
+  }
 `;
 
 const FormRow = styled.div`

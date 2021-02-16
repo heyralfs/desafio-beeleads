@@ -19,6 +19,11 @@ const VideoWrapper = styled.div`
   & img:hover {
     opacity: 0.9;
   }
+  @media screen and (max-width: 767px) {
+    max-width: 95%;
+    margin: 40px auto;
+    height: 60vw;
+  }
 `;
 
 function Video() {

@@ -17,12 +17,12 @@ function App() {
       <Header />
 
       <Section className="formSection">
-        <img src={BigPremio} style={{ marginRight: "76px" }} />
+        <img src={BigPremio} className="big-premio-img" />
         <Form />
       </Section>
 
       <Section className="videoSection">
-        <img src={WomanRadio} style={{ transform: "translateY(19px)" }} />
+        <img src={WomanRadio} className="woman-radio-img" />
         <Video />
       </Section>
 
