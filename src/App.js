@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GlobalStyle from "./globalStyle";
+import Section from "./components/Section";
+
+import BigPremio from "./img/Big-Premio.png";
+import WomanRadio from "./img/Woman-Radio.png";
+import Form from "./components/Form";
+import Video from "./components/Video";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+
+      <Header />
+
+      <Section className="formSection">
+        <img src={BigPremio} style={{ marginRight: "76px" }} />
+        <Form />
+      </Section>
+
+      <Section className="videoSection">
+        <img src={WomanRadio} style={{ transform: "translateY(19px)" }} />
+        <Video />
+      </Section>
+
+      <Footer />
     </div>
   );
 }
