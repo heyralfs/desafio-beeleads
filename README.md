@@ -6,7 +6,7 @@
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:heyralfs/desafio-beeleads.git <https://github.com/heyralfs/desafio-beeleads>
+$ git clone git@github.com:heyralfs/desafio-beeleads.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd desafio-beeleads
